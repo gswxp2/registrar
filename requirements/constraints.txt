@@ -8,14 +8,15 @@
 # pin when possible.  Writing an issue against the offending project and
 # linking to it here is good.
 
+# ImportError: cannot import name 'URLPattern' from 'rest_framework.compat' error on newer versions
+djangorestframework==3.11.1
+
 # django-storages version 1.9 drops support for boto storage backend.
 django-storages<1.9
 
+
 # Stay on latest LTS release
 Django>=2.2,<3.0
-
-# This package is pinned due to openedx.atlassian.net/browse/ARCHBOM-1078
-social-auth-core<3.3.0
 
 # From base.in
 analytics-python<2.0         # https://github.com/edx/registrar/pull/39
