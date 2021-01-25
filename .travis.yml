@@ -11,6 +11,10 @@ env:
 - TOXENV=django22
 - TOXENV=django30
 
+matrix:
+  allow_failures:
+    - env: TOXENV=django30
+
 sudo: false
 
 services:
